@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        select : pencereden eleman seçmemize olanak sağlar.
+
+        textarea : daha uzun metinler için kullanılır.
+
+        datalist : otomatik tamamlama yapar.
+    -->
+
+    <form action="">
+        <label for="cars">Araba seç</label>
+        <select name="cars">
+            <option value="fiat"></option>
+            <option value="mercedes"></option>
+            <option value="polo"></option>
+            <option value="BMW"></option>
+        </select>
+
+        <br>
+        <br>
+        <textarea name="30" id="30"></textarea>
+        <br>
+
+        <label for="">Tarayicilar</label>
+        <input type="text" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">Chrome</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Edge">Edge</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+
+        </datalist>
+    </form>
+
+
+</body>
+</html>
