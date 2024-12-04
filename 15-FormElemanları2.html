@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Bu <form>eleman, metin alanları, onay kutuları, radyo düğmeleri, gönder düğmeleri vb. gibi farklı türdeki giriş elemanları için bir kapsayıcıdır.
+
+        HTML <input>elemanı en çok kullanılan form elemanıdır.
+        
+        
+        Get : Form verilerini URL'ye ad/değer çiftleri halinde ekler
+        Hassas verileri göndermek için ASLA GET kullanmayın! (Gönderilen form verileri URL'de görünür!)
+
+        Post : HTTP isteğinin gövdesine form verilerini ekler (gönderilen form verileri URL'de gösterilmez)
+
+        required : zorunlu anlamına gelir.
+    
+    -->
+    <form action="">
+        <label for="Ad">Adiniz</label>
+        <input required type="text" id="Ad" placeholder="Adinizi giriniz..."> <br>
+
+        <label for="Soyad">Soyadiniz</label>
+        <input required type="text" id="Soyad" placeholder="Soyadinizi giriniz..."> <br>
+
+        <label for="seç">Seçmeli</label>
+        <input type="checkbox" id="seç">
+
+        <label for="">Seçmeli</label>
+        <input type="checkbox">
+        
+        <br>
+
+        <label for="">Renk seç</label>
+        <input type="color">
+
+        <br>
+
+        <label for=>Tarih seç</label>
+        <input type="date">
+
+        <br>
+
+        <label for="eposta">E-Posta gir</label>
+        <input type="email" id="eposta">
+
+        <br>
+
+        <label for="">Uzunluk</label>
+        <input type="range">
+
+        <br>
+
+        <label for="">Dosya seç</label>
+        <input type="file">
+
+        <br>
+
+        <label for="">Erkek</label>
+        <input type="radio" name="cinsiyet">
+        <label for="">Kadin</label>
+        <input type="radio" name="cinsiyet">
+
+
+        <br>
+        <input type="submit" value="gönder">
+    </form>
+</body>
+</html>
