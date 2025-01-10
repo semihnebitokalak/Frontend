@@ -1,0 +1,84 @@
+/*
+
+CSS (Cascading Style Sheets), HTML ile oluşturulan web sayfalarının görünümünü ve düzenini kontrol etmek için kullanılan bir stil dilidir. CSS, web sayfalarının stilini belirlemek için kullanılır ve HTML'den ayrı olarak yazılır. CSS, web sayfalarının daha çekici ve kullanıcı dostu olmasını sağlar.
+
+CSS Yapısı
+CSS, seçiciler (selectors) ve bildirim bloklarından (declaration blocks) oluşur. Bir CSS kuralı şu şekilde yapılandırılır:
+
+selector {
+    property: value;
+    property: value;
+}
+
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+Bu örnekte, h1 seçicisi ile tüm <h1> etiketlerinin metin rengi mavi ve yazı boyutu 24 piksel olarak ayarlanmıştır.
+
+
+CSS Türleri
+CSS üç farklı şekilde kullanılabilir:
+
+1. Satır İçi CSS (Inline CSS): HTML etiketlerinin style özelliği kullanılarak yazılır.
+<h1 style="color: blue; font-size: 24px;">Başlık</h1>
+
+2. Dahili CSS (Internal CSS): HTML belgesinin <head> bölümünde <style> etiketleri içinde yazılır.
+<head>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+3. Harici CSS (External CSS): Ayrı bir .css dosyasında yazılır ve HTML belgesine <link> etiketi ile bağlanır.
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+styles.css dosyasında:
+
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+
+CSS Kullanımı
+CSS, HTML belgelerine stil eklemek için kullanılır. İşte bazı yaygın CSS özellikleri ve kullanımları:
+
+Renk:
+
+p {
+    color: red;
+    background-color: yellow;
+}
+
+Yazı Tipi:
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+Kenarlık ve Dolgu:
+
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+}
+
+Genişlik ve Yükseklik:
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+CSS, web sayfalarının stilini ve düzenini kontrol etmek için güçlü bir araçtır. Harici CSS dosyaları kullanarak stil kurallarını merkezi bir yerde tutmak ve birden fazla HTML belgesine uygulamak en iyi uygulamalardan biridir.
+
+*/
