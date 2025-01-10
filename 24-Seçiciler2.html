@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p{
+            color: red;
+            font-size: 20px;
+        }
+
+        p.content{
+            background-color: tomato;
+            color: white;
+        }
+
+
+        #contentId{
+            background-color: rgb(255, 0, 153);
+            color: rgb(255, 255, 255);
+        }
+
+        .align {
+            text-align: center;
+        }
+
+        /* align yazılan text i ortala demektir. */
+    
+        p,
+        h2,
+        h5 {
+            color: blue; /* Burada p, h2 ve h5 etiketlerinin hepsine aynı style ı uyguladık. */
+        }
+
+    </style>
+</head>
+<body>
+
+    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, at. Repellat blanditiis dolor saepe impedit, dicta a voluptatibus corrupti odit perspiciatis, est minima maiores, corporis incidunt amet eveniet explicabo natus.</p>
+    <h1 class="content">Başlık</h1> <!-- Burada content i uygulayamam çünkü content sadece p etiketine uygulanabilir vaziyette oluşturulmuş. -->
+
+    <!-- Şimdi align ı kullanalım -->
+
+    <p class="align content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus facere doloremque autem nisi eos, libero aliquid fugiat totam repellat esse illum unde voluptates! Atque nostrum inventore ipsa excepturi pariatur ullam.
+    </p>
+
+    <!--
+    
+        Bu tarz örnekleri arttırabiliriz. Mesela div oluşturup sadece div'in altındaki paragraflara style uygulayabilirim. Nasıl kullanmak isterseniz. Hepsinin mantığı aynı.
+
+    -->
+    
+</body>
+</html>
