@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+    Biz burada INTERNAL olarak css i kullanacağız.
+    Yani css kodlarımızı bu sayfada yazacağız.
+    Öncelikle bi paragraf oluşturuyorum style kısmında ve body kısmında bunu uygulayacağım.
+
+    p paragraf etiketinde oluşturduğum her paragraf style içinde oluşturduğum css kodlarını uygulayacaktır.
+    -->
+
+    <!--
+    Classlara ulaşmak için . işareti id' ye ulaşmak için ise # işareti kullanılır.
+    
+    -->
+    <style>
+        p{
+            color: red;
+            font-size: 20px;
+        }
+
+        .content{
+            background-color: tomato;
+            color: white;
+        }
+
+
+        #contentId{
+            background-color: rgb(255, 0, 153);
+            color: rgb(255, 255, 255);
+        }
+    
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate tenetur blanditiis dolor laborum, delectus corrupti! Tempore sed cumque dolor culpa excepturi suscipit eaque deserunt reiciendis officiis, voluptatum nisi eveniet non.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, blanditiis.</p>
+
+    <!--
+        Şimdi paragrag etiketlerinin aynı style olmaması için class ve id kullanacağım.
+    -->
+
+    <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo voluptas architecto inventore qui velit ipsum quibusdam dignissimos accusantium reiciendis porro.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ab, ad et deserunt iure quaerat possimus. Vel, harum sint! Quos voluptates accusantium labore.</p>
+    <!--
+    En son yazdığım paragraf class ve id den etkilenmediği için ana p etiketinin kullandığı style ı kullanır.
+    -->
+
+    <!--
+        Yukarıda yaptığımız işlemlerden bahsedelim:
+        1. p etiketlerinin hepsine aynı style ı uyguladık.
+        2. content class ına farklı bir style uyguladık.
+        3. contentId id sine farklı bir style uyguladık.
+        4. En son yazdığımız p etiketi class ve id den etkilenmediği için ana p etiketinin kullandığı style ı kullanır.
+        Burada önemli olan nokta şu; p etiketini class ile kırabiliyorum. Ayrıca id etiketi ile de class etiketini kırabiliyorum. Hemen örnek yapalım.
+        Yukarıya .id ile yeni bir style uygulayalım.
+    -->
+
+    <p class="content" id="contentId">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima enim, deserunt iste maxime numquam nobis consequatur ratione aliquam tempore pariatur et cupiditate, omnis ipsum corrupti aperiam at rem reiciendis. Culpa?</p>
+
+    <!--
+        Eğer oluşturduğumuz etiketlere contentId veya class uygularsak onların style atamalarını alacaktır.
+    -->
+
+
+</body>
+</html>
