@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* body{
+        overflow: hidden;
+    }
+        */
+    .box {
+            width: 300px;
+            height: 300px;
+            background-color: purple;
+            margin: 10px;
+            position: absolute;
+            /* overflow: scroll; */
+        }
+
+    .box-1{
+        margin-top: 100px;
+        margin-left: 100px;
+        background-color: red;
+        z-index: 2;
+    }
+    .box-2{
+        margin-top: 50px;
+        margin-left: 50px;
+        background-color: green;
+        z-index: 0;
+    }
+    .box-3{
+        margin-top: 25px;
+        margin-left: 25px;
+        background-color: blue;
+        z-index: 0;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div> -->
+<!-- Burada aşağıya inerken sağ tarafta çıkan butonu istemezsek ne yapacağız. Overflow taşma anlamına gelir ve kullanırsak aşağıya inemeyiz.
+    Eğer yaazım kutunun boyutunu aşarsa yine overflow u kullanırız. Peki ben aşağıda kalan yazıları da görmek istiyorsam scroll kullanmam lazım.
+    Eğer overflow auto kullanırsak kendi başına algılayarak istenilen tarafa scroll ekler.
+-->
+    <!-- <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam veritatis, earum, et officia quo placeat beatae tenetur praesentium sunt optio explicabo minima eveniet reprehenderit minus distinctio veniam cupiditate voluptatibus. Totam sunt tenetur, consectetur unde ratione esse quis expedita voluptas numquam molestias non beatae maiores? Voluptatibus suscipit, deserunt sunt error deleniti explicabo cumque fugit voluptas repellat vel ab maxime molestias nemo eos incidunt, magnam exercitationem enim, repellendus similique iste neque sint eveniet ipsam consequuntur? Voluptatum facere eius quasi id beatae iure laboriosam eaque similique sit, labore animi a eligendi earum expedita doloremque dolorum, quis exercitationem aliquid nostrum cumque enim odit itaque quos harum? Mollitia laborum voluptas blanditiis iste cupiditate hic ipsum deleniti modi beatae perspiciatis rem laboriosam nesciunt neque dolor perferendis magnam, repellendus deserunt consectetur tenetur ab dicta doloribus architecto nobis. Error, placeat beatae? Doloribus nesciunt quasi quis dolores magnam? Explicabo exercitationem voluptatibus eligendi voluptatum dolore consectetur optio voluptate rerum fugiat labore inventore tenetur ab minus et ratione, quidem laboriosam ducimus totam molestias aspernatur reiciendis maiores nam. Rerum unde dignissimos, laudantium illo eum distinctio voluptates excepturi eveniet! Quia libero, quam quos ex sapiente aspernatur? Veniam nulla iste praesentium veritatis, doloremque illo possimus atque recusandae magni sequi dignissimos ex beatae ullam!</div> -->
+<!--
+    Z-index olayı ise şudur: Aynı anda 3 tane kutu oluşturalım ve background-color larını farklı yapalım. Üst üste gelmesini istediğimiz kutunun z-index ini yüksek yaparız. Eğer indexler aynı olursa en son yazılan en üstte olur.   
+    Bu dersimizde çok fazla kod yazdığımız için kod analizini güzel yapınız. Yorum satırlarını okuyarak kodları anlamaya çalışınız. 
+-->
+
+<div class="box box-1"></div>
+<div class="box box-2"></div>
+<div class="box box-3"></div>
+
+</body>
+</html>
