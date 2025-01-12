@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: renkdegis;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes renkdegis{
+            from { background-color: black;  width: 100px; height: 100px;}
+            to{ background-color: turquoise;  width: 200px; height: 200px;}
+
+            /* 
+                from ve to kullanmayacaksak bunu nasıl yapacağız.
+                0% { background-color: red; }
+                25% { background-color: yellow;}
+                50% { background-color: blue;}
+                75% { background-color: green;}
+                100% { background-color: red;}
+
+            */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <!-- 
+        CSS animasyonları, bir HTML elementinin stil özelliklerinin belirli bir süre boyunca nasıl değişeceğini tanımlamak için kullanılır. Animasyonlar, web sayfalarına dinamik ve görsel olarak çekici efektler eklemek için kullanılır.
+
+        CSS Animasyonları Kullanımı
+        @keyframes Kuralı:
+        Animasyonun aşamalarını ve her aşamada stilin nasıl olacağını tanımlar.
+
+        Animation Özellikleri:
+
+        animation-name: Kullanılacak animasyonun adını belirtir.
+        animation-duration: Animasyonun ne kadar süreceğini belirtir.
+        animation-timing-function: Animasyonun hız eğrisini belirtir (örneğin, ease, linear, ease-in, ease-out, ease-in-out).
+        animation-delay: Animasyonun başlamadan önce ne kadar bekleyeceğini belirtir.
+        animation-iteration-count: Animasyonun kaç kez tekrarlanacağını belirtir (örneğin, infinite).
+        animation-direction: Animasyonun yönünü belirtir (örneğin, normal, reverse, alternate, alternate-reverse).
+                Animasyon Kullanımının Faydaları
+        Görsel Çekicilik: Web sayfalarını daha dinamik ve ilgi çekici hale getirir.
+        Kullanıcı Deneyimi: Kullanıcı etkileşimlerini daha akıcı ve doğal hale getirir.
+        Geri Bildirim: Kullanıcıların yaptıkları eylemlerin sonuçlarını daha net görmelerini sağlar.
+        Bu sebeplerden dolayı animasyon çok önemlidir ve web sayfalarında sıkça kullanılır.
+
+    -->
+</body>
+</html>
