@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
+            align-content: stretch;
+            gap: 20px;
+            row-gap: 5px;
+            column-gap: 5px;
+        
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            margin: 5px;
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            line-height: 100px;
+        }
+
+        .mybox{
+            order: -1;
+            flex-grow: 6;
+        }
+
+        .mybox2{
+            order: -3;
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box mybox">3</div>
+        <div class="box mybox2">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    
+    </div>
+    <!--
+        CSS Flexbox (Flexible Box), bir konteyner içindeki öğelerin düzenlenmesini ve hizalanmasını kolaylaştıran bir düzenleme modelidir. Flexbox, özellikle karmaşık düzenlerin oluşturulmasında ve öğelerin esnek bir şekilde yerleştirilmesinde kullanışlıdır.
+
+        Bu kavramı daha iyi anlamanız adına size şöyle bir url bırakıyorum: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+        Flex Items (Esnek Öğeler):
+        Flex konteynerin içindeki her bir öğe, flex öğesi olarak adlandırılır.
+        Flex öğeler, konteynerin düzenleme kurallarına göre yerleştirilir.
+
+        flex-direction:
+        Flex öğelerin hangi yönde yerleştirileceğini belirler.
+        Değerler: row, row-reverse, column, column-reverse
+
+        flex-wrap:
+        Flex öğelerin satırları veya sütunları sarmalayıp sarmalamayacağını belirler.
+        Değerler: nowrap, wrap, wrap-reverse
+        
+        justify-content:
+        Flex öğelerin ana eksen boyunca nasıl hizalanacağını belirler.
+        Değerler: flex-start, flex-end, center, space-between, space-around, space-evenly
+
+        align-items:
+        Flex öğelerin çapraz eksen boyunca nasıl hizalanacağını belirler.
+        Değerler: flex-start, flex-end, center, baseline, stretch
+
+        align-content:
+        Çok satırlı flex konteynerlerde satırların çapraz eksen boyunca nasıl hizalanacağını belirler.
+        Değerler: flex-start, flex-end, center, space-between, space-around, stretch
+
+        gap:
+        satır ve sütünda kutular arası boşluk bırakmak için kullanılır.
+
+        flex-grow:
+        Flex öğenin büyüme oranını belirler.
+        
+        flex-shrink:
+        Flex öğenin küçülme oranını belirler. Gerektiğinde sıkıştırma işlemlerini de yapabilir.
+
+        incelemek isterseniz şöyle bir kod bloğu bırakıyorum:
+
+                        <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Flexbox Example</title>
+                    <style>
+                        .container {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: space-between;
+                            height: 300px;
+                            border: 2px solid black;
+                        }
+                        .item {
+                            background-color: lightblue;
+                            padding: 20px;
+                            margin: 10px;
+                            border: 1px solid blue;
+                            flex-grow: 1;
+                            flex-shrink: 1;
+                            flex-basis: 100px;
+                            align-self: center;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <div class="item">Item 1</div>
+                        <div class="item">Item 2</div>
+                        <div class="item">Item 3</div>
+                        <div class="item">Item 4</div>
+                    </div>
+                </body>
+                </html>
+
+        dersi sonuna kadar incelediğiniz için teşekkür ederim.
+        bu deri pekiştirmek için bir oyun bırakıyorum. https://flexboxfroggy.com/
+
+    -->
+</body>
+</html>
