@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Nedir?</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            /* 
+            grid-template-rows: repeat(4,200px);
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: 200px 200px;
+            grid-template-columns: 200px 200px;
+            grid-template-columns: repeat(3, 100px);
+            */
+            grid-template: repeat(3,200px) / repeat(4,200px);
+            /* grid template yaparken iki değeri birden vermeniz gerekiyor yoksa bir değişiklik olmaz. Yukarıdaki yorum satırlarını kaldırıp kendiniz test ederek anlayabilirsiniz.
+            Eğer tüm alanlarımda boşluk bırakmak istiyorsam row-gap & column-gap kullanabilirim.
+            */
+            row-gap: 10px;
+            column-gap: 10px;
+            gap: 20px 20px;
+            /* Justify content ve align özelliklerini kullanalım. */
+            justify-content: center; /* Satırı ortaladık */
+            align-items: center;
+        }
+
+        .container >div {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        .box1{
+            background-color: rgb(30, 0, 255);
+            color: white;
+            /*
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            Yayılma işlemini göreceğiz. Yukarıda 3.satırda bitirme işlemi yaptığımız için 3.satıra kadar geliyor onu dahil etmiyor. Span ile bunu yapabiliyoruz.
+            
+
+            grid-row: 1/ span 3;
+            grid-column: 1/span 3;
+            */
+        }
+
+        .box2{
+            background-color: rgb(230, 0, 255);
+            color: white;
+        }
+
+        .box3{
+            background-color: rgb(94, 255, 0);
+            color: white;
+            order: -1;
+        }
+
+        .box4{
+            background-color: rgb(0, 255, 234);
+            color: white;
+            align-self: flex-end;
+        }
+
+        .box5{
+            background-color: rgb(123, 0, 255);
+            color: white;
+        }
+
+        .box6{
+            background-color: rgb(255, 0, 17);
+            color: white;
+        }
+
+        .box7{
+            background-color: rgb(0, 255, 72);
+            color: white;
+        }
+
+        .box8{
+            background-color: rgb(255, 132, 0);
+            color: white;
+        }
+
+        .box9{
+            background-color: rebeccapurple;
+            color: white;
+        }
+
+        .box10{
+            background-color: rgb(0, 21, 255);
+            color: white;
+        }
+
+        .box11{
+            background-color: rgb(195, 255, 0);
+            color: white;
+        }
+
+        .box12{
+            background-color: teal;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        Grid Container (Izgara Konteyneri):
+        Grid düzeni, bir konteyner (ana kapsayıcı) ve bu konteynerin içindeki öğelerden oluşur.
+        Grid konteyner, display: grid; veya display: inline-grid; ile tanımlanır.
+        CSS Grid Layout, web sayfalarında karmaşık düzenler oluşturmak için kullanılan güçlü bir düzenleme sistemidir. Grid, iki boyutlu bir düzenleme sistemi sunar ve hem satır hem de sütun bazında düzenlemeler yapmanıza olanak tanır.
+        
+        grid-row-start, grid-row-end:
+        Grid öğesinin hangi satırda başlayıp biteceğini tanımlar.
+        Bunu daha önceden yaptığımız gibi order ile de yapabiliriz.
+    -->
+
+    <div class="container">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+        <div class="box8">8</div>
+        <div class="box9">9</div>
+        <div class="box10">10</div>
+        <div class="box11">11</div>
+        <div class="box12">12</div>
+    </div>
+
+
+</body>
+</html>
