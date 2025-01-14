@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: grid;
+            background-color: rgb(36, 36, 35);
+            height: 100vh;
+            color: white;
+            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+                "header header header"
+                "sidebar content sidebar2"
+                "footer footer footer";
+        }
+
+        .box{
+            background-color: rgb(51, 50, 50);
+            margin: 20px;
+            text-align: center;
+        }
+
+        .header{
+            grid-area: header;
+            height: 200px;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+        }
+
+        .sidebar2{
+            grid-area: sidebar2;
+        }
+
+        .content{
+            grid-area: content;
+        }
+
+        .footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box sidebar2">Sidebar2</div>
+        <div class="box content">Content</div>
+        <div class="box footer">Footer</div>
+    </div>
+    
+</body>
+</html>
