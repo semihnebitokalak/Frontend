@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        /* 
+            Temel olarak aşağıdaki kodu anlamaya çalışalım. Eğer mediamda sadece ekranım minimum 1200 px ise arka rengimi turkuaz yap.
+            Bunu aşağıda yazdığımız kodda inceleyiniz.
+            Pencerenizi küçültüp büyülttüğünüzde kodu daha iyi anlayacaksınız.
+        */
+        @media only screen and (min-width: 1200px) {  
+            body{
+                background-color: turquoise;
+            }
+        }
+
+        @media only screen and (max-width: 1199px) and (min-width: 762px){  
+            body{
+                background-color: red;
+            }
+        }
+
+        @media only screen and (max-width: 761px) and (min-width: 576px){  
+            body{
+                background-color: rgb(217, 255, 0);
+            }
+        }
+
+        @media only screen and (max-width: 575px) and (min-width: 100px){  
+            body{
+                background-color: rgb(76, 0, 255);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Responsive web tasarımı, web sayfalarının ve uygulamalarının farklı cihazlarda ve ekran boyutlarında iyi görünmesini ve düzgün çalışmasını sağlamak için kullanılan bir yaklaşımdır. Bu, özellikle mobil cihazlar, tabletler, dizüstü bilgisayarlar ve masaüstü bilgisayarlar gibi çeşitli cihazlarda kullanıcı deneyimini optimize etmek için önemlidir.
+    -->
+    
+</body>
+</html>
