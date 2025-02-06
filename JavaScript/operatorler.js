@@ -10,6 +10,7 @@ console.log(x); // 8
 
 let a = 5, b = "5";
 console.log(a == b);  // true (sadece değerler eşit)
+// JavaScript'te == (eşittir) operatörü tip dönüşümü (type coercion) yaparak iki değeri karşılaştırır. Yani, farklı türdeki değerleri kıyaslarken önce bunları aynı türe çevirir, ardından karşılaştırma yapar.
 console.log(a === b); // false (türleri farklı)
 console.log(typeof a);
 console.log(typeof b);
