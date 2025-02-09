@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit inventore
+      sit, dolore sint suscipit officiis recusandae dolores accusantium
+      accusamus. Cum?
+    </p>
+    <img
+      id="myImg"
+      width="200px"
+      src="https://cdn.pixabay.com/photo/2021/04/10/22/38/tungnguyen0905-6168294_1280.jpg"
+      alt=""
+    />
+    <script>
+      // Burada innerHTML ve innerText kullanımını ve img değişimini göreceğiz.
+      let myP = document.querySelector("p");
+      // myP.innerHTML = "<h1> Yeni bir atama </h1>";
+      myP.innerText = "Yeni bir atama";
+      // innerText ile sadece yazıyı değiştirebiliyorum fakat innerHTML ile html taglerini de değiştirebiliyorum.
+
+      document.getElementById("myImg").src =
+        "https://media.istockphoto.com/id/1254559811/tr/foto%C4%9Fraf/soyut-ill%C3%BCstrasyon-arka-plan.jpg?s=1024x1024&w=is&k=20&c=Qiv1yoasR7ZMrHAYmhFLffSt8cmzrK_ajwanJ5A5WCU=";
+    </script>
+  </body>
+</html>
