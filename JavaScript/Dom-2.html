@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="text">Paragraf 1</p>
+    <p class="text">Paragraf 2</p>
+
+    <ul>
+      <li>Öğe 1</li>
+      <li>Öğe 2</li>
+      <li>Öğe 3</li>
+    </ul>
+
+    <p class="text">Paragraf 3</p>
+    <p class="text">Paragraf 4</p>
+  </body>
+  <script>
+    // getElementsByClassName()	Belirtilen sınıfa (class) sahip tüm öğeleri seçer.
+    // getElementsByTagName()	Belirtilen etiket (tag) adındaki tüm öğeleri seçer.
+    // querySelectorAll()	CSS seçicisiyle eşleşen tüm öğeleri seçer.
+
+    const paragraphs = document.getElementsByClassName("text");
+    console.log(paragraphs); // HTMLCollection olarak döner
+
+    // Döngü ile erişme
+    for (let i = 0; i < paragraphs.length; i++) {
+      paragraphs[i].style.color = "red";
+    }
+
+    const items = document.getElementsByTagName("li");
+
+    for (let item of items) {
+      item.style.fontWeight = "bold";
+    }
+
+    const paragraphs1 = document.querySelectorAll(".text");
+
+    paragraphs1.forEach((p) => {
+      p.style.color = "blue";
+    });
+  </script>
+  <!--  🔹 Belirli bir class içindeki tüm öğeleri almak için → getElementsByClassName()
+        🔹 Belirli bir tag içindeki tüm öğeleri almak için → getElementsByTagName()
+        🔹 CSS seçicileriyle esnek seçim yapmak için → querySelectorAll() 
+  -->
+</html>
