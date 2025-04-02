@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Header Bölümü */
+  header {
+    background-color: #5d81b9;
+    color: white;
+    padding: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background-color: #f5f5f5;
+    transform: skewX(-20deg) translateX(20%);
+    z-index: 1;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  header img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    z-index: 2;
+  }
+  
+  header section {
+    z-index: 2;
+  }
+  
+  /* İletişim Bilgileri */
+  header h2 {
+    color: white;
+    margin-bottom: 10px;
+    border: none;
+    font-size: 1.5rem;
+  }
+  
+  header ul {
+    list-style-type: none;
+  }
+  
+  header ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  header ul li::before {
+    content: "•";
+    color: white;
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  header a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ana içerik */
+  main {
+    background-color: white;
+    padding: 30px;
+  }
+  
+  /* Bölüm başlıkları */
+  h2 {
+    color: #5d81b9;
+    margin: 20px 0 15px;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #5d81b9;
+    padding-bottom: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  h2::before {
+    content: "•";
+    color: #5d81b9;
+    margin-right: 10px;
+    font-size: 1.8rem;
+  }
+  
+  /* Liste stilleri */
+  ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  main ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  main ul li::before {
+    content: "•";
+    color: #5d81b9;
+    position: absolute;
+    left: 0;
+  }
+  
+  /* Experience bölümü */
+  main section:nth-of-type(2) ul li {
+    margin-bottom: 20px;
+  }
+  
+  main section:nth-of-type(2) strong {
+    color: #444;
+    font-size: 1.1rem;
+  }
+  
+  /* Skills listesi */
+  main section:nth-of-type(3) ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /*
+    Aşağıdaki kod section 3'teki liste elemanlarının arka plan rengini ve yazı rengini değiştirmek için kullanıldı.
+    nth-of-type(3) ile 3. section'ı seçiyoruz.
+    ul li ile listedeki her bir elemanı seçiyoruz.
+    background-color ile arka plan rengini belirliyoruz.
+    color ile yazı rengini belirliyoruz.
+    padding ile iç boşluk ekliyoruz.
+    border-radius ile köşeleri yuvarlıyoruz.
+    margin-bottom ile alt boşluk ekliyoruz.
+    
+  */
+  main section:nth-of-type(3) ul li {
+    background-color: #f0f5fc;
+    color: #5d81b9;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+  }
+ 
+  main section:nth-of-type(3) ul li::before {
+    content: none;
+  }
+  
+  /* About Me bölümü */
+  main section:nth-of-type(4) p {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #5d81b9;
+  }
+  
+  /* References bölümü */
+  main section:nth-of-type(5) p {
+    margin-bottom: 5px;
+  }
+  
+  main section:nth-of-type(5) p:first-of-type {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  /* Yatay çizgi */
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #eee;
+    margin: 20px 0;
+  }
+  
+  /* Medya sorguları - mobil cihazlar için */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    header::after {
+      display: none;
+    }
+    
+    header section ul li {
+      justify-content: center;
+    }
+    
+    main section:nth-of-type(3) ul {
+      justify-content: center;
+    }
+  }
+  
+  /* Büyük ekranlar için */
+  /* Mediayı responsive yapı için kullandım. */
+  @media (min-width: 992px) {
+    body {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      height: fit-content;
+    }
+    
+    header {
+      flex-direction: column;
+      height: 100%;
+      align-items: flex-start;
+    }
+    
+    header::after {
+      display: none;
+    }
+    
+    main {
+      grid-column: 2;
+    }
+    
+    hr:first-of-type {
+      display: none;
+    }
+  }
